@@ -1,12 +1,12 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
-const app = express();
-
-app.use(express.static(appRoot+"/public"));
+//const root = appRoot;
 
 router.get('/', function(req, res){
-  res.sendFile(path.join(appRoot + '/views/index.html'));
+  res.send('test');
+//res.sendFile(path.join(root + '/views/index.html'));
+console.log('test');
 });
 
 router.post('/', function(req, res){
