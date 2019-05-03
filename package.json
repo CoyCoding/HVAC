@@ -1,0 +1,16 @@
+{
+  "name": "hvac",
+  "version": "1.0.0",
+  "description": "HVAC website",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "matt coy",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "sass": "^1.19.0",
+    "socket.io": "^2.2.0"
+  }
+}
