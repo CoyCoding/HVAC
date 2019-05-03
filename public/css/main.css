@@ -1,13 +1,16 @@
 body
 {
-  background: red;
+  background: wheat;
   margin: 0;
       font-family: sans-serif;
 }
+h1, h2{
+  margin: 0;
+}
 
 .navbar{
+  z-index: 1;
   display: flex;
-  justify-content: flex-end;
   background: white;
   color: #393030;
   position: fixed;
@@ -35,6 +38,7 @@ body
   display: flex;
   font-size: 18px;
   letter-spacing: 5px;
+  padding-left: 0;
 
 }
 .navbar li{
@@ -48,24 +52,74 @@ body
 
 .hero{
     background-image: url("/img/city.png");
-    min-height: 908px;
-
-    /* Create the parallax scrolling effect */
+    min-height: 550px;
     background-attachment: fixed;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-/*
+.about-us-wrapper{
+  background: white;
+  height: 30vw;
+}
 
-.hero:before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 98px;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 7, 100, .6);
+.about-us-wrapper:before {
+      content: '';
+      position: absolute;
+      z-index: 0;
+      height: 1000px;
+      width: 100%;
+      top: -450px;
+      background: white;
+      clip-path: polygon(0 86%, 0% 100%, 100% 100%);
   }
-*/
+
+.about-us{
+  margin: 0 50px;
+justify-content: center;
+align-content: center;
+display: grid;
+grid-template-columns: auto auto;
+display: grid;
+grid-template-columns: 50% auto;
+grid-gap: 50px;
+}
+
+.about-us-text{
+  justify-self: center;
+      display: flex;
+      width: 500px;
+}
+
+.about-us-text .text-wrapper{
+align-self: center;
+position: relative;
+top: -110px;
+padding: 20px;
+border-radius: 10px;
+}
+
+.about-us-text .text-wrapper p{
+  line-height: 1.5em;
+}
+
+.about-us .img-wrapper{
+  position: relative;
+  top: -115px;
+}
+
+.about-us .img-wrapper img{
+  width: calc(30vw + 100px);
+}
+
+.orange-text{
+  color: #e16517;
+  font-size: 36px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.blue-text{
+  color: blue;
+}
