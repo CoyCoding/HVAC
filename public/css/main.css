@@ -1,3 +1,71 @@
-body{
+body
+{
   background: red;
+  margin: 0;
+      font-family: sans-serif;
 }
+
+.navbar{
+  display: flex;
+  justify-content: flex-end;
+  background: white;
+  color: #393030;
+  position: fixed;
+  width: 100%;
+}
+.navbar .logo{
+  margin-right: auto;
+  padding-left: 20px;
+}
+.navbar .logo img{
+  height: 100%;
+}
+.navbar .nav-info{
+  padding: 0px 20px 10px 0px;
+
+}
+.navbar .phone-number{
+  text-align: right;
+  margin: 15px 10px 15px 0px;
+  font-size: 32px;
+  letter-spacing: 3px;
+}
+.navbar ul{
+  margin: 0px;
+  display: flex;
+  font-size: 18px;
+  letter-spacing: 5px;
+
+}
+.navbar li{
+  list-style-type: none;
+  padding: 0px 10px 0px 20px;
+}
+.navbar li:not(:last-child){
+    border-right: 1px solid rgba(153, 151, 151, 0.75);
+    padding: 0px 20px 0px 20px;
+  }
+
+.hero{
+    background-image: url("/img/city.png");
+    min-height: 908px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+
+.hero:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 98px;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 7, 100, .6);
+  }
+*/
