@@ -1,14 +1,12 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const path = require('path');
 
-
-router.get('/a', function(req, res){
-   res.send('GET route on r0. A');
-});
-
+// Products Page
 router.get('/', function(req, res){
-   res.send('GET route on r0.');
+   res.sendFile(path.join(appRoot + '/views/product.html'));;
 });
+
 router.post('/', function(req, res){
    res.send('POST route on things.');
 });

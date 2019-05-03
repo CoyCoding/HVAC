@@ -1,17 +1,19 @@
 const express = require('express');
 const path = require('path');
 const router = express.Router();
-//const root = appRoot;
+
+
+// Base case - Main page html sent
 
 router.get('/', function(req, res){
-  res.send('test');
-//res.sendFile(path.join(root + '/views/index.html'));
-console.log('test');
+res.sendFile(path.join(appRoot + '/views/index.html'));
 });
+
+// No POST on main page yet might add contact form
 
 router.post('/', function(req, res){
    res.send('POST route on r.');
 });
 
-//export this router to use in our index.js
+//export this router to use in our app.js
 module.exports = router;
