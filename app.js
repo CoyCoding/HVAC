@@ -1,13 +1,18 @@
-var express = require('express')
-var app = express();
 
-//app.use(express.static('main'));
+const path = require('path');
+const express = require('express')
+const app = express();
 
-var main = require('./server/main.js');
-var testRoute = require('./server/router0.js');
-var router1 = require('./server/404.js');
+global.appRoot = path.resolve(__dirname);
+
+app.use(express.static(appRoot+"/public"));
+
+var main = require('./controllers/main.js');
+var testRoute = require('./controllers/router0.js');
+var router1 = require('./controllers/404.js');
 
 //both index.js and things.js should be in same directory
+
 app.use('/test', testRoute);
 app.use('/', main);
 app.use('', router1);
