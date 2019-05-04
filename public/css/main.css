@@ -1,8 +1,11 @@
+@import "/css/main-mQuerys.css" ;
+
 body
 {
   background: wheat;
   margin: 0;
-      font-family: sans-serif;
+  font-family: sans-serif;
+  box-sizing: border-box;
 }
 h1, h2{
   margin: 0;
@@ -11,22 +14,24 @@ h1, h2{
 .navbar{
   z-index: 1;
   display: flex;
-  background: white;
-  color: #393030;
   position: fixed;
   width: 100%;
+  color: beige;
 }
+
 .navbar .logo{
   margin-right: auto;
   padding-left: 20px;
 }
+
 .navbar .logo img{
   height: 100%;
 }
+
 .navbar .nav-info{
   padding: 0px 20px 10px 0px;
-
 }
+
 .navbar .phone-number{
   text-align: right;
   margin: 15px 10px 15px 0px;
@@ -39,19 +44,19 @@ h1, h2{
   font-size: 18px;
   letter-spacing: 5px;
   padding-left: 0;
-
 }
 .navbar li{
   list-style-type: none;
   padding: 0px 10px 0px 20px;
 }
+
 .navbar li:not(:last-child){
     border-right: 1px solid rgba(153, 151, 151, 0.75);
     padding: 0px 20px 0px 20px;
-  }
+}
 
 .hero{
-    background-image: url("/img/city.png");
+    background-image: linear-gradient(183deg, #5e5cd48a 34%, #ffffff), url(/img/city.png);
     min-height: 550px;
     background-attachment: fixed;
     background-position: right;
@@ -59,9 +64,22 @@ h1, h2{
     background-size: cover;
 }
 
+.hero-text{
+  top: 200px;
+  position: relative;
+  font-size: 50px;
+  padding: 0 10px;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 800;
+  color: beige;
+}
+
 .about-us-wrapper{
   background: white;
-  height: 30vw;
+  height: 26vw;
+  min-height: 300px;
+  max-height:
 }
 
 .about-us-wrapper:before {
@@ -76,32 +94,38 @@ h1, h2{
   }
 
 .about-us{
-  margin: 0 50px;
-justify-content: center;
-align-content: center;
-display: grid;
-grid-template-columns: auto auto;
-display: grid;
-grid-template-columns: 50% auto;
-grid-gap: 50px;
+  justify-content: space-evenly;
+  display: flex;
+      padding: 0px 5vw;
 }
 
 .about-us-text{
-  justify-self: center;
-      display: flex;
-      width: 500px;
+  position: relative;
+  top: -95px;
+  display: flex;
+  align-self: center;
 }
 
 .about-us-text .text-wrapper{
-align-self: center;
-position: relative;
-top: -110px;
-padding: 20px;
-border-radius: 10px;
+ font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+ padding: 20px;
+width: 500px;
+}
+
+.about-us-text .text-wrapper h2{
+  font-size: 42px;
+  letter-spacing: 1px;
+}
+
+.about-us-text .text-wrapper h3{
+  font-size: 24px;
+      font-weight: 400;
 }
 
 .about-us-text .text-wrapper p{
-  line-height: 1.5em;
+  line-height: 1.9em;
+    margin: 10px 0;
+    font-size: 1vw;
 }
 
 .about-us .img-wrapper{
@@ -110,14 +134,13 @@ border-radius: 10px;
 }
 
 .about-us .img-wrapper img{
-  width: calc(30vw + 100px);
+  width: calc(26vw + 100px);
+  min-width: 400px;
 }
 
 .orange-text{
   color: #e16517;
-  font-size: 36px;
-  font-weight: 700;
-  font-family: sans-serif;
+
 }
 
 .blue-text{
