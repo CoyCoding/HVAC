@@ -5,8 +5,49 @@ body{
   }
 }
 
-@media only screen and (max-width: 1453px){
-  .about-us-text .text-wrapper {
-    bottom: 0%;
+
+@media only screen and (max-width: 1300px){
+    @-webkit-keyframes Gradient {
+		0%{background-position:0% 50%}
+		100%{background-position: 29% 0%}
+	}
+	@-moz-keyframes Gradient {
+		0%{background-position:0% 50%}
+		100%{background-position: 29% 0%}
+	}
+	@keyframes Gradient {
+		0%{background-position:0% 50%}
+		100%{background-position: 29% 0%}
+	}
+
+  .contact-btn a{
+  	-webkit-animation: Gradient 2s ease;
+  	-moz-animation: Gradient 2s ease;
+  	animation: Gradient 2s ease;
+    animation-fill-mode: forwards;
   }
 }
+
+/*
+@media only screen and (min-width: 1091px){
+    @-webkit-keyframes Gradient2 {
+
+  		100%{background-position:0% 50%}
+	}
+	@-moz-keyframes Gradient2 {
+
+		100%{background-position:0% 50%}
+	}
+	@keyframes Gradient2 {
+
+		100%{background-position:0% 50%}
+	}
+
+  .contact-btn a{
+  	-webkit-animation: Gradient2 2s ease;
+  	-moz-animation: Gradient2 2s ease;
+  	animation: Gradient2 2s ease;
+    animation-fill-mode: forwards;
+  }
+}
+*/
