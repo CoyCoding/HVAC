@@ -2,7 +2,7 @@
 
 body
 {
-  background: wheat;
+  background: white;
   margin: 0;
   font-family: sans-serif;
   box-sizing: border-box;
@@ -79,7 +79,7 @@ h1, h2{
 }
 
 .about-us-wrapper{
-  background: white;
+  background: #f5d2d2;
   height: 27vw;
   min-height: 300px;
   max-height:
@@ -92,7 +92,7 @@ h1, h2{
       height: 1000px;
       width: 100%;
       top: -450px;
-      background: white;
+      background: #f5d2d2;
       clip-path: polygon(0 86%, 0% 100%, 100% 100%);
   }
 
@@ -178,4 +178,59 @@ width: 500px;
 .contact-btn a:active {
   box-shadow: none;
   bottom: 67px;
+}
+
+.res-com-wrapper{
+  padding: 50px 0px;
+  margin: auto;
+width: 60vw;
+}
+
+.res-com{
+    display: flex;
+    justify-content: space-between;
+        background: #f5d2d2;
+}
+
+.res-com .res-com-and h2{
+    font-size: 184px;
+    color: #ffa500ba;
+}
+
+.res-com h2{
+  font-size: 50px;
+  letter-spacing: 20px;
+  font-weight: 100;
+  position: relative;
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+}
+
+.res-com img{
+      height: 240px;
+}
+
+.res{
+  display: flex;
+  position: relative;
+  right: 118px;
+  margin-right: -450px;
+  align-items: center;
+  }
+
+.res h2{
+      top: -40px;
+
+}
+
+.com{
+  display: flex;
+      flex-direction: row-reverse;
+      left: 75px;
+      align-items: center;
+      margin-left: -450px;
+      position: relative;
+}
+
+.com h2{
+      top: 40px;
 }
