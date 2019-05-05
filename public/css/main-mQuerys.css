@@ -24,10 +24,20 @@
 @media only screen and (max-width: 1023px){
   .about-us{
     flex-direction: column-reverse;
+        align-items: center;
   }
-  body .about-us-wrapper {
-    height: inherit;
-  }
+
+  .about-us .about-us-text {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.about-us .img-wrapper .img {
+  position: relative !important;
+  min-width: unset !important;
+  width: inherit !important;
+}
 
   .about-us .img-wrapper {
   align-self: center;
@@ -39,26 +49,27 @@
     width: inherit !important ;
   }
 
-  body .contact-btn {
-        text-align: end;
+  body .about-us img-wrapper img{
+    min-width: none;
+    width: 100%;
+  }
 
+  body .contact-btn {
+    text-align: center !important;
   }
 
   body .contact-btn a{
-    background-color: orange;
-    /* background: linear-gradient(222deg, #ff0000 53%, orange 63%); */
-    box-shadow: 0 5px 0 darkred;
-    color: white;
-    padding: 1em 1.5em;
+    display: inline-flex;
+    left: 0px !important;
+    bottom: 0px !important;
   }
 
   body .contact-btn a:active{
       bottom: -3px;
   }
-  body .about-us img-wrapper img{
-    min-width: none;
-    width: 100%;
-  }
+
+
+
 
 
 }
