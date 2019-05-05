@@ -65,19 +65,22 @@ h1, h2{
     background-position: right;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .hero-text{
-  top: 200px;
-  position: relative;
   font-size: 50px;
-  padding: 0 10px;
-  display: flex;
-  justify-content: flex-end;
-  font-weight: 800;
-  color: beige;
+      display: flex;
+      justify-content: flex-end;
+      font-weight: 800;
+      color: beige;
 }
 
+.hero-text div{
+    padding: 0 5px;
+}
 .triangle:before {
       content: '';
       position: absolute;
@@ -110,7 +113,6 @@ padding: 0 20px 20px 20px;
      margin: 20px 0 0 0;
      background: white;
      width: 500px;
-     /* border-radius: 10px; */
      box-shadow: #7a7a7a 0px 1px 14px 0px;
 }
 
