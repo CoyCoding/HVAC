@@ -1,16 +1,4 @@
-@media only screen and (max-width: 1000px) {
-  /* For mobile phones: */
-body{
-  !important background: black;
-  }
-}
-
-
 @media only screen and (max-width: 1300px){
-    res-com-and h2{
-      left: -250px;
-    }
-
 
     @-webkit-keyframes Gradient {
 		0%{background-position:0% 50%}
@@ -33,29 +21,44 @@ body{
   }
 }
 
-@media only screen and (max-width: 1140px){
-    res-com-and h2{
-      left: -250px;
-    }
-
-
-    @-webkit-keyframes Gradient {
-		0%{background-position:0% 50%}
-		100%{background-position: 29% 0%}
-	}
-	@-moz-keyframes Gradient {
-		0%{background-position:0% 50%}
-		100%{background-position: 29% 0%}
-	}
-	@keyframes Gradient {
-		0%{background-position:0% 50%}
-		100%{background-position: 29% 0%}
-	}
-
-  .contact-btn a{
-  	-webkit-animation: Gradient 2s ease;
-  	-moz-animation: Gradient 2s ease;
-  	animation: Gradient 2s ease;
-    animation-fill-mode: forwards;
+@media only screen and (max-width: 1023px){
+  .about-us{
+    flex-direction: column-reverse;
   }
+  body .about-us-wrapper {
+    height: inherit;
+  }
+
+  .about-us .img-wrapper {
+  align-self: center;
+  width: 100% !important;
+  }
+
+  .about-us-text .text-wrapper {
+    text-align: center;
+    width: inherit !important ;
+  }
+
+  body .contact-btn {
+        text-align: end;
+
+  }
+
+  body .contact-btn a{
+    background-color: orange;
+    /* background: linear-gradient(222deg, #ff0000 53%, orange 63%); */
+    box-shadow: 0 5px 0 darkred;
+    color: white;
+    padding: 1em 1.5em;
+  }
+
+  body .contact-btn a:active{
+      bottom: -3px;
+  }
+  body .about-us img-wrapper img{
+    min-width: none;
+    width: 100%;
+  }
+
+
 }
