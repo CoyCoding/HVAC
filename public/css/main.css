@@ -60,7 +60,7 @@ h1, h2{
 
 .hero{
     background-image: linear-gradient(183deg, #5e5cd48a 34%, #ffffff), url(/img/city.png);
-    min-height: 550px;
+        min-height: 548px;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ padding: 0 20px 20px 20px;
 .about-us-text{
   display: flex;
       justify-content: center;
-          width: 54%;
+          width: 56%;
 }
 
 .about-us-text .text-wrapper{
@@ -154,7 +154,7 @@ padding: 0 20px 20px 20px;
   pointer-events: none;
   max-width: 566px;
   border-radius: 50%;
-  border: white solid 15px;
+  border: white solid 10px;
   box-shadow: #7a7a7a 0px 1px 14px 0px;
 }
 
@@ -181,9 +181,7 @@ padding: 0 20px 20px 20px;
   body .contact-btn a{
         background-color: orange;
         position: relative;
-        left: 100px;
-        bottom: 5px;
-        /* background: linear-gradient(222deg, #ff0000 53%, orange 63%); */
+        left: 20px;
         box-shadow: 0 5px 0 darkred;
         color: white;
         padding: 1em 1.5em;
@@ -192,7 +190,7 @@ padding: 0 20px 20px 20px;
 
 .contact-btn a:active {
   box-shadow: none;
-  bottom: 3px;
+  bottom: -4px;
 }
 
 .res-com-wrapper{
