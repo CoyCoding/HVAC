@@ -88,32 +88,26 @@ h1, h2{
       height: 1000px;
       width: 100%;
       top: -450px;
-      background: #f5d2d2;
+      background: gainsboro;
       clip-path: polygon(0 86%, 0% 100%, 100% 100%);
   }
 
 .about-us{
-  justify-content: space-between;
+  justify-content: center;
   display: flex;
   background: gainsboro;
-padding: 0 20px 20px 20px;
-
 }
 
 .about-us-text{
-  display: flex;
-      justify-content: center;
-          width: 56%;
+  width: 700px;
+  padding: 20px;
+  background: white;
+  margin: 20px;
+  box-shadow: #7a7a7a 0px 1px 14px 0px;
 }
 
 .about-us-text .text-wrapper{
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-     padding-bottom: 20px;
-     padding: 20px;
-     margin: 20px 0 0 0;
-     background: white;
-     width: 500px;
-     box-shadow: #7a7a7a 0px 1px 14px 0px;
 }
 
 .about-us-text .text-wrapper h2{
@@ -128,36 +122,39 @@ padding: 0 20px 20px 20px;
 
 .about-us-text .text-wrapper p{
   line-height: 1.9em;
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
-.about-us .img-wrapper{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 50%;
-  margin-top: -120px;
+.text-wrapper p:nth-of-type(2)  {
+  font-size: 20px;
+}
+
+.about-us-wrapper{
+  max-height: 440px;
+display: flex;
 }
 
 
 .about-us .img-wrapper .img{
   width: 30vw;
-  /* max-width: 100%; */
-  min-width: 470px;
-  position: absolute;
-  justify-content: center;
+  max-width: 530px;
+  min-width: 468px;
+  position: relative;
+  bottom: 110px;
   display: flex;
+  /* justify-items: center; */
 }
 
 
 .about-us .img-wrapper .img img{
   width: 100%;
   height: 100%;
-  pointer-events: none;
-  max-width: 566px;
-  border-radius: 50%;
-  border: white solid 10px;
-  box-shadow: #7a7a7a 0px 1px 14px 0px;
+  /* position: absolute; */
+  /* pointer-events: none; */
+  /* max-width: 436px; */
+  /* border-radius: 50%; */
+  /* border: white solid 10px; */
+  /* box-shadow: #7a7a7a 0px 1px 14px 0px; */
 }
 
 .orange-text{
@@ -177,22 +174,23 @@ padding: 0 20px 20px 20px;
 
   body .contact-btn {
         text-align: end;
-
+        position: relative;
+        bottom: -3px;
   }
 
-  body .contact-btn a{
-        background-color: orange;
-        position: relative;
-        left: 20px;
-        box-shadow: 0 5px 0 darkred;
-        color: white;
-        padding: 1em 1.5em;
+ .contact-btn a{
+   background-color: #be7c00;
+   position: relative;
+   left: 20px;
+   box-shadow: 0 5px 0 #875800;
+   color: white;
+   padding: 1em 1.5em;
   }
 
 
 .contact-btn a:active {
   box-shadow: none;
-  bottom: -4px;
+  bottom: -5px;
 }
 
 .res-com-wrapper{
