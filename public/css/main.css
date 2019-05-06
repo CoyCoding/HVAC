@@ -107,10 +107,10 @@ a{
 
 .hero-text{
   font-size: 50px;
-      display: flex;
-      justify-content: flex-end;
-      font-weight: 800;
-      color: beige;
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 800;
+  color: #ffffff;
 }
 
 .hero-text div{
@@ -143,6 +143,7 @@ a{
 
 .about-us-text .text-wrapper{
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  color: #484848;
 }
 
 .about-us-text .text-wrapper h2{
@@ -287,5 +288,8 @@ position: relative;
 
 body .navbar .active{
   display: block;
+}
+
+body .expand{
   padding-bottom: 20px;
 }
