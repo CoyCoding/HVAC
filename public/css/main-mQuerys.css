@@ -20,7 +20,7 @@
 
   body .navbar-wrapper {
       display: block;
-      padding-bottom: 20px;
+      /* padding-bottom: 20px; */
   }
 
   body .navbar .nav-info {
@@ -55,9 +55,7 @@
   }
   body .navbar .phone-number {
     position: absolute;
-    position: absolute;
-    bottom: 56px;
-    font-size: 26px;
+    bottom: 25px;
   }
 
 }
