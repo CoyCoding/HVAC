@@ -1,5 +1,16 @@
+@media only screen and (min-width: 654px){
+  body .navbar .active{
+    display: flex !important;
+  }
+}
+/* Tablet*/
 @media only screen and (max-width: 655px) {
+
   body .navbar-toggle{
+    display: block;
+  }
+
+  body .navbar .active{
     display: block;
   }
 
@@ -7,31 +18,36 @@
     display: none;
   }
 
+  body .navbar-wrapper {
+      display: block;
+      padding-bottom: 20px;
+  }
+
   body .navbar .nav-info {
     align-items: flex-end;
-    display: block;
+    display: none;
     flex-direction: column;
     background: gainsboro;
     justify-content: space-between;
-}
+  }
 
-body .navbar ul{
-  text-align: center;
-  flex-direction: column;
-}
+  body .navbar ul{
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+  }
 
-body .navbar li{
+  body .navbar li{
 
-}
+  }
 
-body .navbar li {
+  body .navbar li {
     border-right:  0px !important;
     padding: 10px 0 !important;
+    }
 }
 
-}
-
-
+/*Navbar fix*/
 @media only screen and (max-width: 1000px) {
 
   body .navbar-wrapper{
@@ -42,10 +58,11 @@ body .navbar li {
     position: absolute;
     bottom: 56px;
     font-size: 26px;
-}
+  }
 
 }
 
+/*Mid Screen*/
 @media only screen and (max-width: 1169px){
   .about-us{
     flex-direction: column-reverse;
@@ -116,6 +133,7 @@ body .navbar li {
 
 }
 
+/*About us Fix*/
 @media only screen and (max-width: 1265px){
     body .about-us-text{
       width: 100%;

@@ -37,7 +37,6 @@ a{
       padding: 0px 20px;
       display: flex;
       margin: 0px;
-      padding-bottom: 20px;
       justify-content: space-between;
 }
 
@@ -74,7 +73,6 @@ a{
   font-size: 18px;
   letter-spacing: 5px;
   padding-left: 0;
-  margin-top: 20px;
 }
 
 .navbar li{
@@ -280,4 +278,8 @@ position: relative;
 
 .com h2{
       top: 40px;
+}
+
+body .navbar .active{
+  display: block;
 }
