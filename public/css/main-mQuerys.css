@@ -20,7 +20,7 @@
 
   body .navbar-wrapper {
       display: block;
-    
+
   }
 
   body .navbar .nav-info {
@@ -34,7 +34,6 @@
   body .navbar ul{
     text-align: center;
     flex-direction: column;
-    margin-top: 20px;
   }
 
   body .navbar li{

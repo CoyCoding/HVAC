@@ -1,4 +1,5 @@
 @import "/css/main-mQuerys.css" ;
+@import "/css/main-animations.css";
 
 body
 {
@@ -45,9 +46,6 @@ a{
   margin-top: 10px;
   margin-bottom: 10px;
   align-items: center;
-  /* width: 100%; */
-  /* height: 100%; */
-  /* background: #50020291; */
 }
 
 .navbar .logo img{
@@ -92,6 +90,27 @@ a{
 .navbar li:not(:first-child){
     padding-left: 15px;
 }
+
+body .navbar .active{
+  display: block;
+  animation: cascade 1s ease;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+body .active{
+  border-radius: 10px;
+}
+
+body .navbar .active li:not(:last-child ){
+    border-bottom: 2px solid #909090;
+}
+
+body .expand{
+  padding-bottom: 20px;
+}
+
+
 
 .hero{
     background-image: linear-gradient(183deg, #5e5cd48a 34%, #ffffff), url(/img/city.png);
@@ -284,12 +303,4 @@ position: relative;
 
 .com h2{
       top: 40px;
-}
-
-body .navbar .active{
-  display: block;
-}
-
-body .expand{
-  padding-bottom: 20px;
 }
