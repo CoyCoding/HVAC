@@ -113,8 +113,8 @@ body .expand{
 
 
 .hero{
-    background-image: linear-gradient(183deg, #5e5cd48a 34%, #ffffff), url(/img/city.png);
-        min-height: 548px;
+    background-image: linear-gradient(183deg, #1353bdcf 34%, #ffffff00), url(/img/city.png);
+    min-height: 548px;
     background-attachment: fixed;
     background-position: right;
     background-repeat: no-repeat;
@@ -130,6 +130,7 @@ body .expand{
   justify-content: flex-end;
   font-weight: 800;
   color: #ffffff;
+  text-shadow: black 4px 4px 5px;
 }
 
 .hero-text div{
@@ -163,7 +164,8 @@ body .expand{
 
 .about-us-text .text-wrapper{
   font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
-  color: #484848;
+  color: #433b3b;
+  text-shadow: #b0b0b0 0px 5px 20px;
 }
 
 .about-us-text .text-wrapper h2{
@@ -214,16 +216,16 @@ display: flex;
 }
 
 .orange-text{
-  color: orange;
-
+  color: #e96213;
 }
 
 .blue-text{
   color: blue;
+  font-weight: 600;
 }
 
 .contact-btn a:hover {
-  background-color: red;
+  background-color: #e96213;
   cursor: pointer;
 }
 
@@ -240,7 +242,10 @@ display: flex;
    left: 20px;
    box-shadow: 0 5px 0 #875800;
    color: white;
+   font-weight: 700;
+   letter-spacing: 1px;
    padding: 1em 1.5em;
+   /* text-shadow: white 0px 0px 6px; */
   }
 
 
@@ -304,16 +309,15 @@ display: flex;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-      background: linear-gradient(90deg, #ffffff, #0303032e, #ffffff);
+  padding-top: 40px;
+  background: linear-gradient(90deg, #ffffff, #0303032e, #ffffff);
 }
 
-.service-grid div{
-  padding: 20px;
-display: flex;
-width: 28%;
-justify-content: center;
-}
 
 .service-grid .grid2{
   width: 100%;
+  padding: 0;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: center;
 }
