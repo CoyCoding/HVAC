@@ -3,7 +3,7 @@
 
 body
 {
-  background: white;
+  /* background: gainsboro; */
   margin: 0;
   font-family: sans-serif;
   box-sizing: border-box;
@@ -150,6 +150,7 @@ body .expand{
   justify-content: center;
   display: flex;
   background: gainsboro;
+      padding-bottom: 20px;
 }
 
 .about-us-text{
@@ -197,7 +198,7 @@ display: flex;
   position: relative;
   bottom: 110px;
   display: flex;
-  /* justify-items: center; */
+  justify-items: flex-end;
 }
 
 
@@ -249,42 +250,42 @@ display: flex;
 }
 
 .res-com-wrapper{
-  padding: 50px 0px;
-      margin: auto;
-      width: 76vw;
+  background: linear-gradient(90deg, gainsboro, white, gainsboro);
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+      box-shadow: black 0px 6px 10px 0px
 }
 
 .res-com{
-  display: flex;
-justify-content: space-between;
-background: #f5d2d2;
-position: relative;
-left: 15px;
+  display: grid;
+      grid-template-columns: auto auto auto;
+  margin: 0 20px;
+  grid-gap: 3vw;
 }
 
-.res-com .res-com-and h2{
-    font-size: 184px;
-    color: #ffa500ba;
+.res-com .res-com-and{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
 }
 
 .res-com h2{
-  font-size: 50px;
+  font-size: 32px;
   letter-spacing: 20px;
   font-weight: 100;
   position: relative;
-    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
 }
 
 .res-com img{
-      height: 240px;
+      height: 100%;
 }
 
 .res{
-  display: flex;
-  position: relative;
-  right: 118px;
-  margin-right: -450px;
-  align-items: center;
+
   }
 
 .res h2{
@@ -293,14 +294,26 @@ left: 15px;
 }
 
 .com{
-  display: flex;
-flex-direction: row-reverse;
-left: 75px;
-align-items: center;
-margin-left: -421px;
-position: relative;
 }
 
 .com h2{
       top: 40px;
+}
+
+.service-grid{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+      background: linear-gradient(90deg, #ffffff, #0303032e, #ffffff);
+}
+
+.service-grid div{
+  padding: 20px;
+display: flex;
+width: 28%;
+justify-content: center;
+}
+
+.service-grid .grid2{
+  width: 100%;
 }
