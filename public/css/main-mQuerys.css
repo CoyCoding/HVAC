@@ -1,15 +1,4 @@
 @media only screen and (max-width: 909px){
-  .service-grid {
- flex-direction: column;
-  }
-
-.service-info:nth-child(odd){
-  align-self: flex-start;
-}
-
-.service-info:nth-child(even){
-  align-self: flex-end;
-}
 
 }
 
@@ -91,6 +80,18 @@
 /*Navbar fix*/
 @media only screen and (max-width: 1000px) {
 
+  .service-grid {
+ flex-direction: column;
+  }
+
+.service-info:nth-child(odd){
+  align-self: flex-start;
+}
+
+.service-info:nth-child(even){
+  align-self: flex-end;
+}
+
   body .navbar-wrapper{
     display: block;
   }
@@ -158,7 +159,7 @@
   }
 
   body .contact-btn a:active{
-      bottom: -3px;
+      bottom: -5px;
   }
 
   body .hero-text{

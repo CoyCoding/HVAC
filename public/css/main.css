@@ -148,21 +148,21 @@ body .expand{
       height: 1000px;
       width: 100%;
       top: -450px;
-      background: gainsboro;
+      background: #dddddd;
       clip-path: polygon(0 86%, 0% 100%, 100% 100%);
   }
 
 .about-us{
   justify-content: center;
   display: flex;
-  background: gainsboro;
-      padding-bottom: 20px;
+  background: linear-gradient(183deg,#dddddd 19%, #acb3c1);
+  padding-bottom: 20px;
 }
 
 .about-us-text{
   width: 700px;
   padding: 20px;
-  background: white;
+  background: #fdfcfc;
   margin: 20px;
   box-shadow: #7a7a7a 0px 1px 14px 0px;
 }
@@ -251,12 +251,13 @@ display: flex;
    letter-spacing: 1px;
    padding: 1em 1.5em;
    /* text-shadow: white 0px 0px 6px; */
+   bottom: 2px;
   }
 
 
 .contact-btn a:active {
   box-shadow: none;
-  bottom: -5px;
+  bottom: -3px;
 }
 
 .res-com-wrapper{
@@ -313,7 +314,7 @@ display: flex;
 .service-grid{
   display: flex;
   justify-content: center;
-  max-width: 1365px;
+  max-width: 1485px;
   width: 100%;
   flex-wrap: wrap;
 }
@@ -322,10 +323,10 @@ display: flex;
 
 
 section.services {
-    background: linear-gradient(990deg, white, #dcdcdc82, white);
+    background: linear-gradient(72deg, #bdbadc, #acb3c18c, #bdbadc);
     justify-content: center;
     display: flex;
-    padding: 40px 0;
+    padding: 70px 0;
 }
 
 .service-grid > div {
@@ -333,7 +334,8 @@ section.services {
     align-items: center;
     background: white;
     border-radius: 20px;
-    margin: 20px;
+    box-shadow: #6e6e6e 0px 4px 13px 0px;
+    margin: 20px 20px 30px 20px;
 }
 
 .circle{
@@ -342,11 +344,14 @@ section.services {
   border-radius: 50%;
   background: blue;
   margin: 20px;
+  border: #21212185 solid 5px;
+  box-shadow: #000000 0px 1px 9px 2px;
 }
 
-.service-info div {
-}
+.service-info div {color: #1e4eb8;padding: 20px;text-align: center;}
 
 .service-info div h3, .service-info div p {
     max-width: 300px;
+    /* font-weight: 900; */
+    letter-spacing: 1px;
 }
