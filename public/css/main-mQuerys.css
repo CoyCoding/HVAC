@@ -1,3 +1,19 @@
+@media only screen and (max-width: 909px){
+  .service-grid {
+ flex-direction: column;
+  }
+
+.service-info:nth-child(odd){
+  align-self: flex-start;
+}
+
+.service-info:nth-child(even){
+  align-self: flex-end;
+}
+
+}
+
+
 @media only screen and (min-width: 654px){
   body .navbar .active{
     display: flex !important;
@@ -11,7 +27,7 @@
       display: flex;
       justify-content: flex-end;
   }
-  
+
  body  .res-com img {
       height: 20vw;
       min-height: 100px;

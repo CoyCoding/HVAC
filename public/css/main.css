@@ -3,11 +3,16 @@
 
 body
 {
-  /* background: gainsboro; */
+  background: #16459a;
   margin: 0;
   font-family: sans-serif;
+
+}
+
+body div{
   box-sizing: border-box;
 }
+
 h1, h2{
   margin: 0;
 }
@@ -308,16 +313,40 @@ display: flex;
 .service-grid{
   display: flex;
   justify-content: center;
+  max-width: 1365px;
+  width: 100%;
   flex-wrap: wrap;
-  padding-top: 40px;
-  background: linear-gradient(90deg, #ffffff, #0303032e, #ffffff);
 }
 
 
-.service-grid .grid2{
-  width: 100%;
-  padding: 0;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
+
+
+section.services {
+    background: linear-gradient(990deg, white, #dcdcdc82, white);
+    justify-content: center;
+    display: flex;
+    padding: 40px 0;
+}
+
+.service-grid > div {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    margin: 20px;
+}
+
+.circle{
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background: blue;
+  margin: 20px;
+}
+
+.service-info div {
+}
+
+.service-info div h3, .service-info div p {
+    max-width: 300px;
 }
