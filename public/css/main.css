@@ -294,6 +294,7 @@ display: flex;
 .res-com img{
       max-width: 200px;
       height: initial;
+      max-height: 200px;
 }
 
 .res{
