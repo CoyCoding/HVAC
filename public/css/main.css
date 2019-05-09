@@ -270,7 +270,7 @@ display: flex;
 
 .res-com{
   display: grid;
-      grid-template-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
   margin: 0 20px;
   grid-gap: 3vw;
 }
@@ -292,12 +292,17 @@ display: flex;
 }
 
 .res-com img{
-      height: 100%;
+      max-width: 200px;
+      height: initial;
 }
 
 .res{
 
-  }
+display: flex;
+
+align-items: center;
+
+}
 
 .res h2{
       top: -40px;
@@ -305,6 +310,8 @@ display: flex;
 }
 
 .com{
+    display: flex;
+    align-items: center;
 }
 
 .com h2{
@@ -323,7 +330,8 @@ display: flex;
 
 
 section.services {
-    background: linear-gradient(72deg, #bdbadc, #acb3c18c, #bdbadc);
+    background: linear-gradient(72deg, #bdbadc, #0055ff8c, #bdbadc);
+    /* background: #16459a; */
     justify-content: center;
     display: flex;
     padding: 70px 0;
@@ -342,11 +350,12 @@ section.services {
   height: 75px;
   width: 75px;
   border-radius: 50%;
-  background: blue;
+  background: #e96213;
   margin: 20px;
   border: #21212185 solid 5px;
   box-shadow: #000000 0px 1px 9px 2px;
 }
+
 
 .service-info div {color: #1e4eb8;padding: 20px;text-align: center;}
 
@@ -354,4 +363,52 @@ section.services {
     max-width: 300px;
     /* font-weight: 900; */
     letter-spacing: 1px;
+}
+
+section.products-wrapper {
+    display: flex;
+    background: linear-gradient(124deg, #bdbadc, #0055ff8c, #bdbadc);
+    justify-content: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 400px 400px;
+    grid-template-rows: 400px 400px;
+    grid-gap: 100px;
+    padding: 100px 0;
+}
+
+.product-square{
+      box-shadow: white 0px 0px 5px 0px !important;
+      border: #767676 2px solid !important;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center !important;
+
+}
+
+.fireplace{
+      background: linear-gradient(#000000a1, #ffa50059) ,url(/img/fireplace2.png);
+}
+
+.rub{
+  background: linear-gradient(#000000a1, #ffa50082), url(/img/fireplace2.png);
+}
+
+.outdoor{
+  background: linear-gradient(#000000a1, #ffa50082),  url(/img/grill2.png);
+}
+
+.grill{
+  background: linear-gradient(#000000a1, #ffa50082), url(/img/grill2.png);
+}
+
+.products h2 {
+    font-size: 51px;
+    letter-spacing: 10px;
+    color: white;
+    text-shadow: black 0px 4px 8px;
 }
