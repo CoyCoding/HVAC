@@ -392,19 +392,19 @@ section.products-wrapper {
 }
 
 .fireplace{
-      background: linear-gradient(#000000a1, #ffa50059) ,url(/img/fireplace2.png);
+      background: linear-gradient(#000000, #a23c00b8) ,url(/img/fireplace2.png);
 }
 
 .rub{
-  background: linear-gradient(#000000a1, #ffa50082), url(/img/fireplace2.png);
+  background: linear-gradient(#000000, #d7ff00b3),   url(/img/rubs.png);
 }
 
 .outdoor{
-  background: linear-gradient(#000000a1, #ffa50082),  url(/img/grill2.png);
+  background: linear-gradient(#000000, #03c12282),   url(/img/outdoors.png);
 }
 
 .grill{
-  background: linear-gradient(#000000a1, #ffa50082), url(/img/grill2.png);
+  background: linear-gradient(#000000, #002bff7a), url(/img/grill2.png);
 }
 
 .products h2 {
